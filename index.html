@@ -236,6 +236,19 @@ Licence URI: https://www.os-templates.com/template-terms
           <button type="submit" value="submit">Submit</button>
         </fieldset>
       </form>
+      <script type="text/javascript">
+
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbyv1cwE-3Tj1yvUWvbKrrN6T3fkiHsQzgvmp02uPxCRXuKvZ9_Hdd1KM-0MILPXBBKT-Q/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
     </article>
     <!-- ################################################################################################ -->
   </section>
