@@ -170,6 +170,7 @@ File: Layout CSS
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
+#Footer .linklist li{color: #FFFFFF}
 
 #footer .latestimg{}
 #footer .latestimg > li{display:inline-block; float:left; width:30%; margin:0 0 5% 5%;}
